@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="manifest" href="/manifest.webmanifest">
+    <script src="./script/app.js" async defer type="module"></script>
+</head>
+<body>
+    <nav>
+        <a class="active" href="index.html">Today</a>
+        <a href="tomorrow.html">Tomorrow</a>
+        <a href="seven_days.html">7 days</a>
+    </nav>
+    <header>
+        <h3 class="timezone"></h3>
+        <p class="today date-time"></p>
+    </header> 
+    <main>
+        <section>
+            <figure>
+                <img class="img-today" src="#" alt="weather icon">
+                <figcaption class="description-today"></figcaption>
+            </figure>
+
+            <div class="temperature-container">
+                <h1 class="current temperature"></h1>
+                <p class="today feels-like">Feels like:</p>
+            </div>
+            
+            <div class="container">
+                <div class="weather">
+                    <p class="today sunrise">Sunrise: </p>
+                    <p class="today sunset">Sunset: </p>
+                    <p class="today wind">Winds:</p>
+                    <p class="today cloud">Clouds:</p>
+                    <p class="today humidity">Humidity:</p>
+                    <p class="today uv-index">UV index:</p>
+                    <p class="today pressure">Pressure:</p>
+                </div>
+                <div class="progress-container">
+                    <div class="progress-bar"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
