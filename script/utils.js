@@ -1,5 +1,5 @@
 (async () => {
-    return fetch('https://api.openweathermap.org/data/2.5/onecall?lat=40.7308619&lon=-73.9871558&units=metric&appid=c19b3062e70d36001c26410c649e5ff9')
+    return fetch('https://api.openweathermap.org/data/2.5/onecall?lat=40.7308619&lon=-73.9871558&units=metric&appid={YOUR API KEY}')
     .then(response => response.json())
     .then(data => localStorage.setItem('data', JSON.stringify(data)))
 .catch(err => {
