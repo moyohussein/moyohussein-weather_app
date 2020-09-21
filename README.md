@@ -2,7 +2,7 @@
 A Progressive web app that gives you details of the current, tomorrow and 7-day weather forecast of New York. I am limiting my scope to newyork central as this is an assigned project. 
 
 <h2>Note</h2>
-for security reasons, I have replaced my API key on the project with a place holder. Visit <a href="openweathermap.org/">openweathermap</a> to obtain you key so as to see the application work.
+for security reasons, I have replaced my API key on the project with a place holder. Visit <em>openwweather.org</em> to obtain you key so as to see the application work.
 <h2>API's</h2>
 I have used the fetch API, storage API, openweather map API and service worker API
 
