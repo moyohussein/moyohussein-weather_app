@@ -1,14 +1,3 @@
-if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('sw.js')
-    .then((reg) => {
-      // registration worked
-      console.log('Registration succeeded. Scope is ' + reg.scope);
-    }).catch((error) => {
-      // registration failed
-      console.log('Registration failed with ' + error);
-    });
-};
-
 import {storedData, unixTimeConverter, rearrangeString} from './utils.js';
 
 const currentTemp = document.querySelector('h1.current');
@@ -56,7 +45,8 @@ function progressScroll () {
 }
 
 function displayBackground() {
-    let currentHour = todayDateTime.textContent.substr(13, 2);
+    const currentTime = unixTimeConverter(storedData['current']['dt']);
+    const currentHour = currentTime.substr(0, 2);
     switch(currentHour) {
         case '00':
             dom.style.backgroundImage = 'linear-gradient(305deg, #0cbaba 0%, #380036 74%)';

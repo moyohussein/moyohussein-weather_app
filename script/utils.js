@@ -1,5 +1,16 @@
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js')
+    .then((reg) => {
+      // registration worked
+      console.log('Registration succeeded. Scope is ' + reg.scope);
+    }).catch((error) => {
+      // registration failed
+      console.log('Registration failed with ' + error);
+    });
+};
+
 (async () => {
-    return fetch('https://api.openweathermap.org/data/2.5/onecall?lat=40.7308619&lon=-73.9871558&units=metric&appid={YOUR API KEY}')
+    return fetch('https://api.openweathermap.org/data/2.5/onecall?lat=40.7308619&lon=-73.9871558&units=metric&appid=c19b3062e70d36001c26410c649e5ff9')
     .then(response => response.json())
     .then(data => localStorage.setItem('data', JSON.stringify(data)))
 .catch(err => {
@@ -32,6 +43,6 @@ function rearrangeString(item) {
     let state = timezone.substring(timezone.indexOf('/') + 1, timezone.length);
     state = state.replace('_', ' ');
     return state + ', ' + country;
-}
+};
 
 export {storedData, unixDateConverter, unixTimeConverter, rearrangeString}
