@@ -115,19 +115,19 @@ p.feels-like {
 }
 
 .container {
-    margin: 2rem 0;  
     flex: 1; 
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .weather {
-    margin: 2rem 0;
     display: inline-flex;
     flex-direction: row;
     overflow-x: scroll;
     scrollbar-width: none;
     width: 100%;
-    height: 30%;
+    height: auto;
+    align-items: center;
 }
 
 ::-webkit-scrollbar {
