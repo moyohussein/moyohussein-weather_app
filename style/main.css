@@ -118,7 +118,7 @@ p.feels-like {
 .container {
     margin: 2rem 0;  
     flex: 1; 
-    max-width: 100vw;
+    max-width: 50vw;
 }
 
 .weather {
