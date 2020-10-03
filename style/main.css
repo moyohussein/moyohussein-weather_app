@@ -98,7 +98,7 @@ img {
 .temperature-container {
     display: inline-flex;
     align-items: center;
-    width: 100%;
+    width: auto;
 }
 
 h1.temperature {
@@ -125,7 +125,7 @@ p.feels-like {
     flex-direction: row;
     overflow-x: scroll;
     scrollbar-width: none;
-    width: 100%;
+    width: auto;
     height: auto;
 }
 
