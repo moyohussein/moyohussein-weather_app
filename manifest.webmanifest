@@ -3,7 +3,7 @@
     "short_name": "Weather app",
     "theme_color": "rgba(255,255,255, 0.5)",
     "background_color": "rgba(0,0,0, 0.5)",
-    "display": "fullscreen",
+    "display": "stand-alone",
     "orientation": "portrait",
     "scope": "/",
     "start_url": "/",
