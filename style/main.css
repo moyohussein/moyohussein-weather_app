@@ -117,6 +117,7 @@ p.feels-like {
 .container {
     margin: 2rem 0;  
     flex: 1; 
+    width: 100vw;
 }
 
 .weather {
